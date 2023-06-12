@@ -1,0 +1,21 @@
+import random
+
+def generate_random_numbers(n):
+    numbers = []
+    for _ in range(n):
+        numbers.append(random.randint(1, 100))
+    return numbers
+
+def calculate_sum(numbers):
+    total = sum(numbers)
+    return total
+
+# Generate a list of 10 random numbers
+random_numbers = generate_random_numbers(10)
+
+# Calculate the sum of the random numbers
+sum_of_numbers = calculate_sum(random_numbers)
+
+# Print the random numbers and their sum
+print("Random Numbers:", random_numbers)
+print("Sum of Numbers:", sum_of_numbers)
